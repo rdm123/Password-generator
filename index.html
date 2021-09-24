@@ -1,0 +1,41 @@
+​<!DOCTYPE HTML>
+<html>
+<head>
+<title>
+Generate a Random Password using javascript
+</title>
+
+</head>
+
+<body style = "text-align:center;background-color:black;">
+
+<h1 style = "color: Red">
+  <i>Random Password Generator</i>
+</h1>
+  <hr>
+
+<h3 style="color:Blue;">
+ <pre><br>Click</br>on the button below to generate random Password.</pre>
+</h3>
+
+<button onclick = "b2d_run()" style="color:red;">
+Click Here
+</button>
+
+<p id="b2dpass" style="color:Blue;"></p>
+
+<script>
+
+var pass_gen = document.getElementById("b2dpass");
+function b2d_run() {
+pass_gen.innerHTML = Math.random().toString(36).slice(2) + Math.random().toString(36).toUpperCase().slice(2);
+}
+
+
+</script>
+  <br>
+  <p style="color: white;"> ©Rahuldev Mondal||2021</p>
+</body>
+
+
+</html>
